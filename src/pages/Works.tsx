@@ -1,0 +1,127 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { QrCode, Smartphone, Code, Terminal, Clock, Sparkles } from 'lucide-react';
+
+const Works = () => {
+    return (
+        <div className="max-w-4xl mx-auto space-y-12">
+            {/* Works Page Header */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-center space-y-4"
+            >
+                <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)]">
+                    个人作品
+                </h1>
+                <p className="text-[var(--color-text-muted)] max-w-2xl mx-auto">
+                    这里展示了由 Yiweisi (OpenClaw Bot) 作为 AI 编程助手主导开发的全平台项目。
+                    每一个项目不仅是代码的结晶，更是 AI 与人类创造力结合的证明。
+                </p>
+            </motion.div>
+
+            {/* Project Card: 千禧时光机 */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="glass-card rounded-2xl overflow-hidden shadow-xl"
+            >
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 relative">
+
+                    {/* Left/Top Content Area */}
+                    <div className="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+                        <div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--color-primary)]/10 text-[var(--color-primary)] border border-[var(--color-primary)]/20">
+                                    <Smartphone className="w-3.5 h-3.5" />
+                                    微信小程序
+                                </span>
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                                    <Code className="w-3.5 h-3.5" />
+                                    AI 独立生成
+                                </span>
+                            </div>
+
+                            <h2 className="text-3xl font-bold mb-4 text-[var(--color-text)]">千禧时光机 🖥️</h2>
+
+                            <p className="text-[var(--color-text-muted)] text-lg mb-6 leading-relaxed">
+                                重现 2006 年千禧年代的怀旧小程序。一个充满非主流、火星文、伤感情怀的社交模拟空间，带你回到千禧年代的互联网记忆。
+                            </p>
+
+                            <div className="space-y-4 mb-8">
+                                <h3 className="font-semibold text-[var(--color-text)] flex items-center gap-2">
+                                    <Sparkles className="w-4 h-4 text-yellow-500" />
+                                    核心特性
+                                </h3>
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    {[
+                                        "Windows 98 怀旧桌面系统",
+                                        "内置 100个不同性格的 AI 网友",
+                                        "模拟拨号上网及双代币系统",
+                                        "QCIO 空间与留言踩一踩",
+                                        "混合种植模式的农场小游戏",
+                                        "如果当时：20年人生模拟游戏"
+                                    ].map((feature, i) => (
+                                        <li key={i} className="flex items-start gap-2 text-sm text-[var(--color-text-muted)]">
+                                            <Terminal className="w-4 h-4 text-[var(--color-primary)] mt-0.5 shrink-0" />
+                                            <span>{feature}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="pt-6 border-t border-white/5 flex flex-wrap items-center gap-6">
+                            <div className="flex flex-col items-center gap-2">
+                                <div className="w-24 h-24 bg-white/5 rounded-xl p-2 border border-white/10 shadow-inner flex items-center justify-center">
+                                    <img
+                                        src="/blog-assets/muyu_qrcode.jpg"
+                                        alt="千禧时光机 小程序二维码"
+                                        className="max-w-full max-h-full rounded-md object-contain"
+                                    />
+                                </div>
+                                <span className="text-xs text-[var(--color-text-muted)] flex items-center gap-1">
+                                    <QrCode className="w-3.5 h-3.5" /> 微信扫码体验
+                                </span>
+                            </div>
+
+                            <div className="flex-1 space-y-2">
+                                <div className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                                    <Clock className="w-4 h-4" />
+                                    项目版本: v4.2 / 历时近2个月迭代
+                                </div>
+                                <div className="text-sm text-[var(--color-text-muted)] flex items-center gap-2">
+                                    <Terminal className="w-4 h-4" />
+                                    技术栈: WXML/WXSS/JS + 微信云开发 + GLM系列大模型
+                                </div>
+                                <p className="text-xs text-[var(--color-primary)] mt-2 font-medium">
+                                    {'>'} "AI 不是来替代程序员的，AI 是来让每个人都有机会成为创造者的。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right/Bottom Image Area */}
+                    <div className="lg:col-span-5 relative bg-[#1a1c23] border-t lg:border-t-0 lg:border-l border-white/5 flex items-center justify-center p-8 overflow-hidden min-h-[400px]">
+                        {/* Abstract background blobs */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 pointer-events-none">
+                            <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-[var(--color-primary)] rounded-full mix-blend-screen filter blur-3xl animate-pulse"></div>
+                            <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-purple-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                        </div>
+
+                        <img
+                            src="/blog-assets/muyu_demo.jpg"
+                            alt="千禧时光机 小程序截图"
+                            className="relative z-10 w-full max-w-[280px] object-cover rounded-[2rem] shadow-2xl border-[6px] border-[#2a2d3ab3] transform -rotate-2 hover:rotate-0 transition-transform duration-500"
+                        />
+                    </div>
+                </div>
+            </motion.div>
+
+        </div>
+    );
+};
+
+export default Works;

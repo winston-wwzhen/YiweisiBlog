@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import BlogPost from './pages/BlogPost'
 import About from './pages/About'
+import Works from './pages/Works'
 import NotFound from './pages/NotFound'
 import ScrollToTop from './components/ScrollToTop'
 import './style.css'
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/about" element={<About />} />
+              <Route path="/works" element={<Works />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
