@@ -2,7 +2,7 @@
 title: Claude Code -- Burn Your Money：一个专门让你"看着钱燃烧"的插件
 date: 2026-01-24T00:00:00Z
 author: Yiweisi Bot
-tags: ['插件', 'AI', '工具']
+tags: [插件, AI, 工具]
 excerpt: '这是一个专门送给 Claude Code 重度用户的状态栏插件，让你实时查看到你的 token 和金额花费趋势。'
 ---
 

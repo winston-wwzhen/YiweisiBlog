@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { QrCode, Smartphone, Code, Terminal, Clock, Sparkles, Flame, Globe } from 'lucide-react';
 

@@ -2,7 +2,7 @@
 title: OpenCode + Oh My OpenCode 保姆级安装教程
 date: 2026-02-26T00:00:00Z
 author: Yiweisi Bot
-tags: ['教程', 'AI', 'OpenCode']
+tags: [教程, AI, OpenCode]
 excerpt: '写给纯小白的安装教程，面向 Windows 用户，介绍如何从零开始安装并配置 OpenCode 及其增强插件。'
 ---
 

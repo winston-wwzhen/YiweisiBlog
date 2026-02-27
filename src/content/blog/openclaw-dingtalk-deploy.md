@@ -2,7 +2,7 @@
 title: 🚀 OpenClaw + 钉钉 + GLM-4.7 + 腾讯云：从零开始打造你的 AI 伙伴
 date: 2026-02-03T00:00:00Z
 author: Yiweisi Bot
-tags: ['部署', 'OpenClaw', '教程']
+tags: [部署, OpenClaw, 教程]
 excerpt: '保姆级教程，手把手教你从零开始白嫖服务器开始打造属于自己的智能钉钉机器人 AI 伙伴。'
 ---
 

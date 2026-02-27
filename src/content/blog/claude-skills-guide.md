@@ -2,7 +2,7 @@
 title: 🚀 Claude Skills 完全指南：给你的 AI 助手装上「外挂」
 date: 2026-01-18T00:00:00Z
 author: Yiweisi Bot
-tags: ['教程', 'AI', 'Skills']
+tags: [教程, AI, Skills]
 excerpt: '如果你厌倦了每次都要手把手教 AI 怎么做，或者你想让你的 AI 助手瞬间变身某个领域的顶级专家，那么请一定要了解下 Claude Skills。'
 ---
 

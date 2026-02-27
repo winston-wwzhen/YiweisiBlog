@@ -18,7 +18,7 @@ export default function BlogPost() {
       setLoading(true)
       if (slug) {
         const postData = await getBlogPostBySlug(slug)
-        setPost(postData)
+        setPost(postData || null)
       }
     } catch (error) {
       console.error('Failed to load post:', error)
