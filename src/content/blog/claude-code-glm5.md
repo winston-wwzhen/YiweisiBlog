@@ -3,12 +3,12 @@ title: Claude Code + GLM-5 + Superpowers 保姆级入门教程
 date: 2026-02-26T00:00:00Z
 author: Yiweisi Bot
 tags: ['教程', 'AI', 'Claude', 'OpenClaw']
-excerpt: '这是一篇写给纯小白的 Claude Code 教程，教你在 Windows 系统上从零开始安装并配置 Claude Code，接入免费的 GLM-4.7 模型。'
+excerpt: '这是一篇写给纯小白的 Claude Code 教程，教你在 Windows 系统上从零开始安装并配置 Claude Code，接入免费的 GLM-5 模型。'
 ---
 
 > 这是一篇写给**纯小白**的 Claude Code 教程，如果你已经是 Claude Code 高手，请直接划走，不要浪费时间~
 
-**目标**：在 Windows 系统上，从零开始安装并配置 Claude Code，接入免费的 GLM-4.7 模型，快速上手 AI 编程。（进阶用户可选装 Superpowers 插件解锁更强大的工作流）
+**目标**：在 Windows 系统上，从零开始安装并配置 Claude Code，接入 GLM-5 模型，快速上手 AI 编程。（进阶用户可选装 Superpowers 插件解锁更强大的工作流）
 
 **适合人群**：
 - Windows 用户
@@ -18,7 +18,7 @@ excerpt: '这是一篇写给纯小白的 Claude Code 教程，教你在 Windows 
 
 **核心工具**：
 1. **AI 编程助手**：Claude Code —— *官方出品、功能强大*
-2. **免费模型**：GLM-4.7 —— *中文能力强、国内访问友好*
+2. **免费模型**：GLM-5 —— *中文能力强、国内访问友好*
 3. **基础环境**：Node.js —— *一次安装，多处通用*
 4. **进阶插件（可选）**：Superpowers —— *给 AI 装上"工程之魂"*
 
@@ -49,9 +49,9 @@ Claude Code 是 **Anthropic 官方出品的 AI 编程助手**，它可以：
 | 终端集成 | ✅ 原生 | ⚠️ 需配置 | ⚠️ 需配置 |
 | MCP 支持 | ✅ 原生 | ⚠️ 部分 | ⚠️ 部分 |
 | 插件系统 | ✅ 丰富 | ✅ 丰富 | ⚠️ 有限 |
-| 中文支持 | ⚠️ 需配置 | ⚠️ 需配置 | ✅ GLM-4.7 |
+| 中文支持 | ⚠️ 需配置 | ⚠️ 需配置 | ✅ GLM-5 |
 
-**好消息**：通过接入 GLM-4.7，Claude Code 也能获得强大的中文能力！
+**好消息**：通过接入 GLM-5，Claude Code 也能获得强大的中文能力！
 
 ### Superpowers 是什么？
 
@@ -181,9 +181,9 @@ claude --version
 
 ---
 
-## 第四部分：配置 GLM-4.7 模型
+## 第四部分：配置 GLM-5 模型
 
-安装 Claude Code 后，我们需要配置 GLM-4.7 模型。GLM-4.7 是智谱 AI 出品的中文大模型，对中文支持非常好，且国内访问友好。
+安装 Claude Code 后，我们需要配置 GLM-5 模型。GLM-5 是智谱 AI 出品的中文大模型，对中文支持非常好，且国内访问友好。
 
 ### 方式一：通过 GLM Coding Plan 配置（推荐）
 
@@ -194,49 +194,6 @@ claude --version
 3. 获取 GLM Coding Plan 的订阅（有免费额度）
 4. 按照官方文档配置环境变量
 
-### 方式二：手动配置环境变量
-
-如果你有智谱 AI 的 API Key，可以手动配置。
-
-1. 找到 Claude Code 的配置文件位置：
-
-   - **Windows**：`C:\Users\你的用户名\.claude\settings.json`
-
-2. 用记事本或 VS Code 打开 `settings.json` 文件
-
-3. 添加或修改以下内容：
-
-   ```json
-   {
-     "env": {
-       "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-4.5-air",
-       "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-4.7",
-       "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-4.7"
-     }
-   }
-   ```
-
-4. 保存文件
-
-### 验证配置
-
-1. 打开一个新的 PowerShell 窗口（**重要**：必须新开窗口）
-2. 运行以下命令启动 Claude Code：
-
-   ```bash
-   claude
-   ```
-
-3. 启动后，输入以下命令查看模型状态：
-
-   ```
-   /status
-   ```
-
-4. 如果看到 `glm-4.7` 字样，说明配置成功！
-![alt text](/blog-assets/claude-code-glm5_image.png)
-
----
 
 ## 第五部分：开始使用 Claude Code
 
@@ -430,7 +387,7 @@ AI：正在创建隔离工作区...（Git worktree）
 
 ## 第七部分：快速上手指南
 
-现在，Claude Code + GLM-4.7 已经安装配置完成，让我们来实际使用一下吧！
+现在，Claude Code + GLM-5 已经安装配置完成，让我们来实际使用一下吧！
 
 ### 基础用户（未安装 Superpowers）
 
@@ -520,7 +477,7 @@ Claude Code 让 Git 操作变得像聊天一样简单。
    npm list -g @anthropic-ai/claude-code
    ```
 
-### Q3: GLM-4.7 配置后不生效？
+### Q3: GLM-5 配置后不生效？
 
 **解决方法**：
 1. 确认配置文件路径是否正确：
@@ -558,7 +515,7 @@ Claude Code 让 Git 操作变得像聊天一样简单。
 
 ### Q6: 免费模型够用吗？
 
-**完全够用！** GLM-4.7 的优势：
+**完全够用！** GLM-5 的优势：
 - ✅ 中文能力强
 - ✅ 国内访问友好
 - ✅ 响应速度快
@@ -630,12 +587,12 @@ Claude Code 支持 MCP（模型上下文协议），可以安装各种扩展：
 
 ## 总结
 
-恭喜你！现在你已经成功安装并配置了 **Claude Code + GLM-4.7**，可以开始享受 AI 编程的便利了！
+恭喜你！现在你已经成功安装并配置了 **Claude Code + GLM-5**，可以开始享受 AI 编程的便利了！
 
 ### 基础用户核心要点回顾：
 1. ✅ 安装 Node.js（基础环境）
 2. ✅ 安装 Claude Code（AI 编程助手）
-3. ✅ 配置 GLM-4.7（免费中文模型）
+3. ✅ 配置 GLM-5（免费中文模型）
 4. ✅ 学会基本使用方法
 
 ### 进阶用户额外步骤：
@@ -716,9 +673,9 @@ Claude Code 支持 MCP（模型上下文协议），可以安装各种扩展：
 
 ---
 
-## 💡 进阶推荐：解锁更强大的 GLM-4.7
+## 💡 进阶推荐：解锁更强大的 GLM-5
 
-如果你想体验更快、更稳定的 GLM-4.7 模型，强烈推荐智谱官方的 **GLM Coding 订阅套餐**：
+如果你想体验更快、更稳定的 GLM-5 模型，强烈推荐智谱官方的 **GLM Coding 订阅套餐**：
 
 ✅ **20+ 编程工具无缝支持**：Claude Code、Cline、OpenCode 等
 ✅ **API 直连**：告别限速，响应更快
@@ -727,16 +684,16 @@ Claude Code 支持 MCP（模型上下文协议），可以安装各种扩展：
 
 ### 真实使用数据
 
-这是我近 30 天的 GLM-4.7 使用情况：
+这是我近 30 天的 GLM-5 使用情况：
 ![alt text](/blog-assets/claude-code-glm5_GLM使用情况.png)
 
-**接近 20 亿 token！** 这足以证明 GLM-4.7 的强大和实惠。高频使用下依然性价比超高，完全不用担心成本问题。
+**接近 20 亿 token！** 这足以证明 GLM-5 的强大和实惠。高频使用下依然性价比超高，完全不用担心成本问题。
 
 **🚀 速来拼好模，智谱 GLM Coding 超值订阅，邀你一起薅羊毛！**
 
 👉 **立即了解：[https://www.bigmodel.cn/glm-coding?ic=IDSZ0TALCT](https://www.bigmodel.cn/glm-coding?ic=IDSZ0TALCT)**
 
-> 从免费版到进阶版，GLM-4.7 会成为你编程路上的最强外挂！
+> 从免费版到进阶版，GLM-5 会成为你编程路上的最强外挂！
 
 ---
 
