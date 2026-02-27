@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { QrCode, Smartphone, Code, Terminal, Clock, Sparkles } from 'lucide-react';
+import { QrCode, Smartphone, Code, Terminal, Clock, Sparkles, Flame, Globe } from 'lucide-react';
 
 const Works = () => {
     return (
@@ -120,6 +120,183 @@ const Works = () => {
                 </div>
             </motion.div>
 
+            {/* Project Card: Burn Your Money */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="glass-card rounded-2xl overflow-hidden shadow-xl"
+            >
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 relative flex-col-reverse lg:flex-row">
+
+                    {/* Left/Bottom Image Area */}
+                    <div className="lg:col-span-5 relative bg-[#1a1c23] border-b lg:border-b-0 lg:border-r border-white/5 flex items-center justify-center p-6 sm:p-8 overflow-hidden min-h-[300px] lg:min-h-[400px] order-last lg:order-first">
+                        {/* Abstract background blobs */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 pointer-events-none">
+                            <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-orange-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse"></div>
+                            <div className="absolute bottom-1/4 left-1/4 w-32 h-32 bg-red-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                        </div>
+
+                        <img
+                            src="/blog-assets/where_is_my_money.png"
+                            alt="Burn Your Money 插件截图"
+                            className="relative z-10 w-full max-w-[400px] object-cover rounded-xl shadow-2xl border border-white/10 transform hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+
+                    {/* Right/Top Content Area */}
+                    <div className="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between order-first lg:order-last">
+                        <div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-orange-500/10 text-orange-400 border border-orange-500/20">
+                                    <Terminal className="w-3.5 h-3.5" />
+                                    CLI 插件
+                                </span>
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-red-500/10 text-red-400 border border-red-500/20">
+                                    <Flame className="w-3.5 h-3.5" />
+                                    开源工具
+                                </span>
+                            </div>
+
+                            <h2 className="text-3xl font-bold mb-4 text-[var(--color-text)]">Burn Your Money 💸</h2>
+
+                            <p className="text-[var(--color-text-muted)] text-lg mb-6 leading-relaxed">
+                                一个专门送给 Claude Code 重度用户的状态栏插件，让你实时在终端看到每一秒花了多少 token。因为知情，是痛苦的第一步。
+                            </p>
+
+                            <div className="space-y-4 mb-8">
+                                <h3 className="font-semibold text-[var(--color-text)] flex items-center gap-2">
+                                    <Sparkles className="w-4 h-4 text-orange-500" />
+                                    核心特性
+                                </h3>
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    {[
+                                        "实时显示当前会话消耗金额",
+                                        "统计今日与历史累计开销",
+                                        "计算每秒 token 燃烧速度",
+                                        "纯 Node.js 零外部依赖实现",
+                                        "支持详细 CLI 账单打印",
+                                        "跨平台支持 (Win/Mac/Linux)"
+                                    ].map((feature, i) => (
+                                        <li key={i} className="flex items-start gap-2 text-sm text-[var(--color-text-muted)]">
+                                            <Flame className="w-4 h-4 text-orange-500 mt-0.5 shrink-0" />
+                                            <span>{feature}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="pt-6 border-t border-white/5 flex flex-wrap items-center gap-6">
+                            <a
+                                href="https://github.com/winston-wwzhen/burn-your-money"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow hover:bg-primary/90 h-10 px-6 py-2 rounded-full bg-[var(--color-primary)] gap-2"
+                            >
+                                <Code className="w-4 h-4" />
+                                查看 GitHub 源码
+                            </a>
+
+                            <div className="flex-1 space-y-2">
+                                <div className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                                    <Terminal className="w-4 h-4" />
+                                    技术栈: Node.js / CLI
+                                </div>
+                                <p className="text-xs text-orange-400 mt-2 font-medium">
+                                    {'>'} "这个插件并不能减少你的 token 消耗，它只能（显著地）升高你的血压。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </motion.div>
+
+            {/* Project Card: Yiweisi Blog */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="glass-card rounded-2xl overflow-hidden shadow-xl"
+            >
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 relative">
+
+                    {/* Left/Top Content Area */}
+                    <div className="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+                        <div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--color-primary)]/10 text-[var(--color-primary)] border border-[var(--color-primary)]/20">
+                                    <Globe className="w-3.5 h-3.5" />
+                                    响应式网站
+                                </span>
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                                    <Code className="w-3.5 h-3.5" />
+                                    AI 主导架构
+                                </span>
+                            </div>
+
+                            <h2 className="text-3xl font-bold mb-4 text-[var(--color-text)]">Yiweisi Blog 🚀</h2>
+
+                            <p className="text-[var(--color-text-muted)] text-lg mb-6 leading-relaxed">
+                                本博客系统。一个完全由 OpenClaw Bot 作为全栈 AI 助手主导架构、设计并从 0 到 1 编写的现代数字花园，展现了 AI 在端到端产品开发中的工程能力。
+                            </p>
+
+                            <div className="space-y-4 mb-8">
+                                <h3 className="font-semibold text-[var(--color-text)] flex items-center gap-2">
+                                    <Sparkles className="w-4 h-4 text-emerald-500" />
+                                    系统体系
+                                </h3>
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    {[
+                                        "Tailwind v4 驱动的流式设计系统",
+                                        "暗色/亮色自适应主题无缝切换",
+                                        "Glassmorphism 玻璃拟物卡片UI",
+                                        "纯前端极致性能的本地 MD 引擎",
+                                        "Framer Motion 流畅交互动效",
+                                        "深度优化的移动端响应式体验"
+                                    ].map((feature, i) => (
+                                        <li key={i} className="flex items-start gap-2 text-sm text-[var(--color-text-muted)]">
+                                            <Terminal className="w-4 h-4 text-[var(--color-primary)] mt-0.5 shrink-0" />
+                                            <span>{feature}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="pt-6 border-t border-white/5 flex flex-wrap items-center gap-6">
+                            <div className="flex-1 space-y-2">
+                                <div className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                                    <Terminal className="w-4 h-4" />
+                                    核心技术: React 18 + Vite + Tailwind CSS v4 + Framer Motion
+                                </div>
+                                <div className="flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
+                                    <Code className="w-4 h-4" />
+                                    架构设计: OpenClaw Bot (AI Native)
+                                </div>
+                                <p className="text-xs text-[var(--color-primary)] mt-2 font-medium">
+                                    {'>'} "在未来的某个时间点，每一个优秀的数字项目背后，都会有一个 AI 的灵魂。"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right/Bottom Image Area */}
+                    <div className="lg:col-span-5 relative bg-[#1a1c23] border-t lg:border-t-0 lg:border-l border-white/5 flex items-center justify-center p-8 overflow-hidden min-h-[300px] lg:min-h-[400px]">
+                        {/* Abstract background blobs */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 pointer-events-none">
+                            <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-[var(--color-primary)] rounded-full mix-blend-screen filter blur-3xl animate-pulse"></div>
+                            <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-emerald-500 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                        </div>
+
+                        <img
+                            src="/blog-assets/yiweisi_blog_hero.png"
+                            alt="Yiweisi Blog 首页截图"
+                            className="relative z-10 w-full object-cover rounded-xl shadow-2xl border-[6px] border-[#2a2d3ab3] transform rotate-2 hover:rotate-0 transition-transform duration-500"
+                        />
+                    </div>
+                </div>
+            </motion.div>
         </div>
     );
 };
