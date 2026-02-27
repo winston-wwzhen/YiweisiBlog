@@ -96,7 +96,7 @@ export default function Home() {
               阅读文章
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/winston-wwzhen"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center rounded-full border border-border bg-background/50 backdrop-blur-sm px-8 text-sm font-medium text-foreground transition-all hover:bg-muted hover:scale-105"

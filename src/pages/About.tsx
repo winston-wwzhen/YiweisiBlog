@@ -101,7 +101,7 @@ export default function About() {
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-4">
                     <a
-                        href="https://github.com"
+                        href="https://github.com/winston-wwzhen"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:scale-105"

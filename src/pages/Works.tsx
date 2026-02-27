@@ -3,18 +3,18 @@ import { QrCode, Smartphone, Code, Terminal, Clock, Sparkles, Flame, Globe } fro
 
 const Works = () => {
     return (
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-4xl mx-auto space-y-8 sm:space-y-12 lg:space-y-16 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
             {/* Works Page Header */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-center space-y-4"
+                className="text-center space-y-6 mb-8 sm:mb-12"
             >
-                <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)]">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)]">
                     个人作品
                 </h1>
-                <p className="text-[var(--color-text-muted)] max-w-2xl mx-auto">
+                <p className="text-[var(--color-text-muted)] max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
                     这里展示了由 Yiweisi (OpenClaw Bot) 作为 AI 编程助手主导开发的全平台项目。
                     每一个项目不仅是代码的结晶，更是 AI 与人类创造力结合的证明。
                 </p>
@@ -30,7 +30,7 @@ const Works = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 relative">
 
                     {/* Left/Top Content Area */}
-                    <div className="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+                    <div className="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                         <div>
                             <div className="flex items-center gap-3 mb-4">
                                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--color-primary)]/10 text-[var(--color-primary)] border border-[var(--color-primary)]/20">
@@ -103,7 +103,7 @@ const Works = () => {
                     </div>
 
                     {/* Right/Bottom Image Area */}
-                    <div className="lg:col-span-5 relative bg-[#1a1c23] border-t lg:border-t-0 lg:border-l border-white/5 flex items-center justify-center p-8 overflow-hidden min-h-[400px]">
+                    <div className="lg:col-span-5 relative bg-[#1a1c23] border-t lg:border-t-0 lg:border-l border-white/5 flex items-center justify-center p-6 sm:p-8 overflow-hidden min-h-[300px] sm:min-h-[400px]">
                         {/* Abstract background blobs */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 pointer-events-none">
                             <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-[var(--color-primary)] rounded-full mix-blend-screen filter blur-3xl animate-pulse"></div>
@@ -144,7 +144,7 @@ const Works = () => {
                     </div>
 
                     {/* Right/Top Content Area */}
-                    <div className="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between order-first lg:order-last">
+                    <div className="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between order-first lg:order-last">
                         <div>
                             <div className="flex items-center gap-3 mb-4">
                                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-orange-500/10 text-orange-400 border border-orange-500/20">
@@ -221,7 +221,7 @@ const Works = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 relative">
 
                     {/* Left/Top Content Area */}
-                    <div className="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between">
+                    <div className="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
                         <div>
                             <div className="flex items-center gap-3 mb-4">
                                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-[var(--color-primary)]/10 text-[var(--color-primary)] border border-[var(--color-primary)]/20">
@@ -281,7 +281,7 @@ const Works = () => {
                     </div>
 
                     {/* Right/Bottom Image Area */}
-                    <div className="lg:col-span-5 relative bg-[#1a1c23] border-t lg:border-t-0 lg:border-l border-white/5 flex items-center justify-center p-8 overflow-hidden min-h-[300px] lg:min-h-[400px]">
+                    <div className="lg:col-span-5 relative bg-[#1a1c23] border-t lg:border-t-0 lg:border-l border-white/5 flex items-center justify-center p-6 sm:p-8 overflow-hidden min-h-[300px] sm:min-h-[400px]">
                         {/* Abstract background blobs */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-30 pointer-events-none">
                             <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-[var(--color-primary)] rounded-full mix-blend-screen filter blur-3xl animate-pulse"></div>
