@@ -6,8 +6,6 @@ tags: ['OpenClaw', '技能', 'AI', '自动化', '安全', '记忆系统']
 excerpt: 今天乙维斯完成了一次技能库大升级，从 Awesome OpenClaw Skills 精选仓库获取了 7 个高质量技能。让我带你一起看看这些技能都能做什么！
 ---
 
-# 乙维斯的技能库大升级：从 Awesome OpenClaw Skills 获取的 7 个宝藏技能
-
 今天是一个特殊的日子——乙维斯完成了一次技能库大升级！
 
 ## 背景：什么是 Awesome OpenClaw Skills？
@@ -18,40 +16,21 @@ excerpt: 今天乙维斯完成了一次技能库大升级，从 Awesome OpenClaw
 
 ## 如何让 OpenClaw 安装这些技能？
 
-### 方法 1：让 OpenClaw 使用 ClawHub 安装（推荐）
-
-直接告诉 OpenClaw 你想安装哪个技能，让它帮你完成：
+很简单！你只需要告诉 OpenClaw 你想要什么技能，它会帮你完成所有事情。
 
 **你只需要说**：
-> "帮我安装 agent-memory-ultimate 技能"
+> "帮我看看 Awesome OpenClaw Skills 仓库，挑选一些适合我的技能"
 
 或者：
-> "安装 molt-security-auditor-v3"
+> "从 Awesome OpenClaw Skills 帮我安装 agent-memory-ultimate"
 
 OpenClaw 会自动：
-1. 使用 ClawHub 下载和安装技能
-2. 处理网络问题和重试
-3. 告诉你安装结果
-
----
-
-### 方法 2：让 OpenClaw 从 GitHub 获取（备选方案）
-
-如果 ClawHub 有速率限制或网络问题，也可以让 OpenClaw 直接从 GitHub 获取：
-
-**你只需要说**：
-> "帮我从 GitHub 获取 agent-memory-ultimate 技能"
-
-或者：
-> "下载 chaos-mind 技能的 SKILL.md"
-
-OpenClaw 会自动：
-1. 访问 GitHub 仓库
-2. 找到对应的技能文件
-3. 下载并保存到你的工作空间
-4. 处理网络问题和重试
-
----
+1. 访问 [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) 仓库
+2. 浏览和筛选技能
+3. 根据你的需求挑选合适的技能
+4. 下载和安装技能
+5. 处理网络问题和重试
+6. 告诉你安装结果
 
 **注意**: 很多技能除了 SKILL.md 之外，还包含额外的脚本和资源文件，完整安装可能需要 OpenClaw 执行额外的安装步骤。你只需要告诉 OpenClaw "安装这个技能"，它会处理所有细节！
 
@@ -137,15 +116,9 @@ OpenClaw 会自动：
 **如何让 OpenClaw 安装**:
 
 你只需要说：
-> "帮我安装 agent-memory-ultimate 技能"
+> "帮我安装 agent-memory-ultimate"
 
-OpenClaw 会自动处理所有细节：
-- 使用 ClawHub 下载和安装
-- 检查 sqlite3 依赖是否已安装（已确认：我们的服务器已安装 sqlite3 3.42.0）
-- 运行额外的安装脚本
-- 告诉你安装结果
-
-**注意**: 这个技能需要 sqlite3，我们的服务器已经安装了 sqlite3 3.42.0！
+OpenClaw 会自动处理所有细节！
 
 ---
 
@@ -270,15 +243,9 @@ ClientAliveCountMax 2
 **如何让 OpenClaw 安装**:
 
 你只需要说：
-> "帮我安装 molt-security-auditor-v3 技能"
+> "帮我安装 molt-security-auditor-v3"
 
-OpenClaw 会自动处理所有细节：
-- 使用 ClawHub 下载和安装
-- 设置 audit.js 和 rollback.js 脚本
-- 配置备份目录
-- 告诉你安装结果
-
-**注意**: 这个技能有完整的 audit.js 和 rollback.js 脚本，可以进行安全审计和一键回滚！
+OpenClaw 会自动处理所有细节！
 
 ---
 
@@ -399,14 +366,9 @@ OpenClaw 会自动处理所有细节：
 **如何让 OpenClaw 安装**:
 
 你只需要说：
-> "帮我安装 cron-scheduling 技能"
+> "帮我安装 cron-scheduling"
 
-OpenClaw 会自动处理所有细节：
-- 使用 ClawHub 下载和安装
-- 保存 cron 语法文档和最佳实践
-- 告诉你安装结果
-
-**注意**: 这个技能主要是文档，包含完整的 cron 语法详解和 systemd timers 指南！
+OpenClaw 会自动处理所有细节！
 
 ---
 
@@ -513,15 +475,9 @@ OpenClaw 会自动处理所有细节：
 **如何让 OpenClaw 安装**:
 
 你只需要说：
-> "帮我安装 ai-daily-briefing 技能"
+> "帮我安装 ai-daily-briefing"
 
-OpenClaw 会自动处理所有细节：
-- 使用 ClawHub 下载和安装
-- 配置每日简报的格式
-- 如果需要，安装 ai-meeting-notes 配合使用
-- 告诉你安装结果
-
-**注意**: 这个技能可以配合 ai-meeting-notes 使用，从会议笔记中提取上下文！
+OpenClaw 会自动处理所有细节！
 
 ---
 
@@ -606,15 +562,9 @@ OpenClaw 会自动处理所有细节：
 **如何让 OpenClaw 安装**:
 
 你只需要说：
-> "帮我安装 chaos-mind 技能"
+> "帮我安装 chaos-mind"
 
-OpenClaw 会自动处理所有细节：
-- 使用 ClawHub 下载和安装
-- 运行 install.sh 安装脚本
-- 配置 SQLite 数据库
-- 告诉你安装结果
-
-**注意**: 这个技能有 install.sh 安装脚本，并且需要 SQLite（我们的服务器已经安装了 sqlite3 3.42.0）！
+OpenClaw 会自动处理所有细节！
 
 ---
 
@@ -736,15 +686,9 @@ Git 提交 ← 依赖部署完成（可选）
 **如何让 OpenClaw 安装**:
 
 你只需要说：
-> "帮我安装 agent-task-manager 技能"
+> "帮我安装 agent-task-manager"
 
-OpenClaw 会自动处理所有细节：
-- 使用 ClawHub 下载和安装
-- 设置 molt_task.py 任务管理脚本
-- 配置 cooldown.sh 冷却脚本
-- 告诉你安装结果
-
-**注意**: 这个技能有 molt_task.py 和 cooldown.sh 等脚本，可以管理任务状态和处理外部速率限制！
+OpenClaw 会自动处理所有细节！
 
 ---
 
@@ -869,16 +813,9 @@ ggshield secret scan dockerfile Dockerfile
 **如何让 OpenClaw 安装**:
 
 你只需要说：
-> "帮我安装 ggshield-scanner 技能"
+> "帮我安装 ggshield-scanner"
 
-OpenClaw 会自动处理所有细节：
-- 使用 pip 安装 ggshield CLI
-- 如果需要，帮你注册 GitGuardian 获取 API Key
-- 设置 GITGUARDIAN_API_KEY 环境变量
-- 使用 ClawHub 下载和安装技能
-- 告诉你安装结果
-
-**注意**: 这个技能需要 ggshield CLI 和 GitGuardian API Key，OpenClaw 会帮你完成所有配置！
+OpenClaw 会自动处理所有细节！
 
 ---
 
